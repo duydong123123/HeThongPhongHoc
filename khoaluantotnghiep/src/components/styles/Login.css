@@ -1,0 +1,85 @@
+/* Layout.css */
+
+.layout-container {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 12px;
+  background-color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+/* LoginForm.css */
+
+.login-card {
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.title-login {
+  text-align: center;
+  color: #333;
+}
+
+.button-submit {
+  width: 100%;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.button-submit:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+/* NewsCard.css */
+
+.news-card {
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.news-container {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.date-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1890ff;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.text-link {
+  color: #1890ff;
+  text-decoration: underline;
+}
+
+.text-link:hover {
+  color: #40a9ff;
+}
+
+.news-label-new,
+.news-label-hot {
+  color: red;
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.news-item {
+  margin-bottom: 16px;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
+}

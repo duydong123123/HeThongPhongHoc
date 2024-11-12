@@ -1,0 +1,131 @@
+/* PhongHocSV.css */
+
+/* Thiết lập chung cho layout */
+.layout {
+  background-color: #f0f2f5;
+  /* min-height: 100vh; Đảm bảo layout chiếm toàn bộ chiều cao viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .ant-layout-header {
+  background-color: #f0f2f5;
+}
+
+
+.content {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tùy chỉnh thanh tìm kiếm */
+.search-bar {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 12px; /* Giảm padding để làm cho khung nhỏ gọn */
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 8px; /* Giảm khoảng cách giữa các phần tử */
+  align-items: center;
+  
+}
+
+.search-input {
+  width: 180px; /* Giảm độ rộng để làm cho khung nhỏ gọn */
+}
+
+.select, .ant-picker {
+  width: 130px; /* Giảm độ rộng của các khung chọn */
+}
+
+/* Tùy chỉnh khung chứa bảng */
+.card-container {
+  background-color: #ffffff;
+  padding: 12px; /* Giảm padding để khung nhỏ gọn hơn */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  flex: 1; /* Giúp khung chiếm không gian còn lại mà không đẩy footer */
+  display: flex;
+  flex-direction: column;
+  max-width: 95%; /* Giới hạn độ rộng để khung không quá to */
+  margin: 0 auto; /* Căn giữa khung */
+}
+
+.card-title {
+  text-align: center;
+  color: #1890ff;
+  font-weight: bold;
+  margin-bottom: 16px; /* Giảm khoảng cách phía dưới tiêu đề */
+  font-size: 16px; /* Giảm kích thước font tiêu đề để phù hợp hơn */
+}
+
+/* Tùy chỉnh bảng */
+.ant-table-wrapper {
+  flex: 1; /* Giúp bảng chiếm không gian còn lại trong khung */
+  max-height: 350px; /* Giới hạn chiều cao của bảng */
+  overflow-y: auto; /* Cho phép cuộn dọc trong bảng */
+  overflow-x: hidden; /* Không cho cuộn ngang */
+}
+
+.table-row {
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #e6f7ff;
+}
+
+.table-cell-content {
+  font-size: 13px; /* Giảm kích thước font để khung nhỏ gọn hơn */
+  padding: 4px; /* Giảm padding trong bảng */
+}
+
+.empty-cell {
+  color: #ccc;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Tùy chỉnh thanh cuộn */
+.ant-table-wrapper {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d1d1 #f0f2f5;
+}
+
+.ant-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+.ant-table-wrapper::-webkit-scrollbar-track {
+  background-color: #f0f2f5;
+}
+
+/* Tùy chỉnh cho giao diện di động */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input, .select, .ant-picker {
+    width: 100%;
+  }
+
+  .card-container {
+    padding: 12px;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+}

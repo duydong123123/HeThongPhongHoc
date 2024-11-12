@@ -1,0 +1,17 @@
+/* Header styling */
+.header-container {
+    background-color: #fff; /* White background */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for subtle separation */
+    padding: 0 24px;
+  }
+  
+  .title-header {
+    text-align: center;
+  }
+  
+  .sub-title {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
